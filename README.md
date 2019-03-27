@@ -1,3 +1,3 @@
 # Cokol_XX
 
-This is a repository dedicated to all relevant code for use with the Cokol-XX rocket series
+This is a repository dedicated to all relevant code for use with the Cokol-XX rocket series, capable of VTVL by means of standard rocket motor thrust vectoring systems (TVS).
