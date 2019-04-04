@@ -1,7 +1,6 @@
 /*
 Copied from: https://www.instructables.com/id/Arduino-Rocket-Guidance/
 */
-
 #include "Wire.h"       // allows communication to i2c devices connected to arduino
 #include "I2Cdev.h"     // I2Connection library (communication to serial port)
 #include "MPU6050.h"    // IMU library
@@ -30,7 +29,7 @@ void setup()
     Serial.println("Initialize MPU");
     mpu.initialize();
     Serial.println(mpu.testConnection() ? "Connected" : "Connection failed"); 
-    outer.attach(11); //servo on pin 9 for large ring y
+    outer.attach(11); //servo on pin 9 for large ring y //need to confirm X/Y planes
     inner.attach(12);//servo on pin 10 for small ring x
 }
 /////////////////////////////////////////////////////////////////////////////////////// 
@@ -52,7 +51,7 @@ void loop()
         prevVali = vali; 
     }
     Serial.print(valo);
-        Serial.print(" ");
+    Serial.print(" ");
     Serial.println(vali);
 
 }
