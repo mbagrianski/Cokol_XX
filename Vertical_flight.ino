@@ -1,4 +1,6 @@
-
+/*
+Copied from: https://www.instructables.com/id/Arduino-Rocket-Guidance/
+*/
 
 #include "Wire.h"       // allows communication to i2c devices connected to arduino
 #include "I2Cdev.h"     // I2Connection library (communication to serial port)
